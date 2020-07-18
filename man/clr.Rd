@@ -6,8 +6,21 @@
 \usage{
 clr(...)
 }
+\arguments{
+\item{...}{up to 4 arguments, which may include console, environment,
+packages, and plot. Truncated versions of these work as well, down to
+co, en, pa, and pl, respectively. There is an optional argument, all, which
+will clear all 4. Inputting no arguments will clear the
+console, global environment, and plots. \code{clr(...)} will read all
+arguments independent of order and truncation.}
+}
 \description{
-This function clears several optional areas of RStudio. If the function has
-no arguments, it will by default clear the Global Environment, Plots
-window, and the Console window.
+This function clears several optional areas of RStudio.
+}
+\examples{
+\code{clr()}
+\code{clr(environment)}
+\code{clr(en)}
+\code{clr(pack, pl, environment)}
+\code{clr(all)}
 }
